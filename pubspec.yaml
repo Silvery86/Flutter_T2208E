@@ -64,6 +64,10 @@ flutter:
     - assets/images/pizza.jpg
     - assets/images/bg1.jpeg
     - assets/destinations.json
+    - assets/images/hoi-an.jpg
+    - assets/images/ha-noi.jpg
+    - assets/images/da-nang.jpg
+    - assets/images/sai-gon.jpg
   #   - images/a_dot_ham.jpeg
 
   # An image asset can refer to one or more resolution-specific "variants", see

@@ -1,25 +1,25 @@
 [
   {
     "name": "Hoi An",
-    "imageUrl": "https://vietnam.travel/sites/default/files/inline-images/11125-Qu%E1%BA%A3ng%20Nam-huybank%40gmail.com-hoi%20an%20ve%20dem%20.jpg",
+    "imageUrl": "assets/images/hoi-an.jpg",
     "rating": 4.8,
     "isFavorite": true
   },
   {
     "name": "Ha Noi",
-    "imageUrl": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLID3zK7apQO2y2_cxJcU7fded6RGMoRUajw&s",
+    "imageUrl": "assets/images/ha-noi.jpg",
     "rating": 4.9,
     "isFavorite": true
   },
   {
     "name": "Sai Gon",
-    "imageUrl": "https://cdn3.ivivu.com/2014/10/Du-lich-sai-gon-duoi-trai-nghiem-cua-phong-vien-bao-Theguardian-iVIVU.com-1.jpeg",
+    "imageUrl": "assets/images/sai-gon.jpg",
     "rating": 4.5,
     "isFavorite": false
   },
   {
     "name": "Da Nang",
-    "imageUrl": "https://vcdn1-dulich.vnecdn.net/2022/06/03/cauvang-1654247842-9403-1654247849.jpg?w=1200&h=0&q=100&dpr=1&fit=crop&s=Swd6JjpStebEzT6WARcoOA",
+    "imageUrl": "assets/images/da-nang.jpg",
     "rating": 4.7,
     "isFavorite": true
   }

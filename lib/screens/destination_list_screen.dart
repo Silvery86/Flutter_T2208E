@@ -1,7 +1,6 @@
 // lib/screens/destination_list.dart
 import 'package:flutter/material.dart';
 import '../models/destination.dart';
-import '../services/api_service.dart';
 import '../widgets/destination_item.dart';
 
 class DestinationList extends StatelessWidget {

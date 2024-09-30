@@ -18,15 +18,16 @@ class DestinationItem extends StatelessWidget {
       child: Stack(
         children: [
           // Background image
-          Image.network(
-            destination.imageUrl,
+          Image.asset(
+            'assets/images/${destination.name.toLowerCase().replaceAll(' ', '-')}.jpg', // Dynamically generate asset path based on destination name
             fit: BoxFit.cover,
-            height: 100,
+            height: 200,
             width: double.infinity,
             errorBuilder: (context, error, stackTrace) {
               return Image.asset('assets/placeholder.png'); // Placeholder image in your assets
             },
           ),
+
           // Favorite icon in the top right corner
           Positioned(
             top: 8,
@@ -55,7 +56,7 @@ class DestinationItem extends StatelessWidget {
                   margin: const EdgeInsets.only(top: 4),
                   padding: const EdgeInsets.symmetric(horizontal: 8, vertical: 4),
                   decoration: BoxDecoration(
-                    color: Colors.white.withOpacity(0.5), // White background with 50% opacity
+                    color: Colors.white.withOpacity(0.8), // White background with 50% opacity
                     borderRadius: BorderRadius.circular(12), // Rounded corners
                   ),
                   child: Row(
@@ -67,7 +68,7 @@ class DestinationItem extends StatelessWidget {
                       ),
                       Text(
                         '${destination.rating}',
-                        style: TextStyle(color: Colors.black), // Black text color for rating
+                        style: TextStyle(color: Colors.black,fontWeight: FontWeight.bold), // Black text color for rating
                       ),
 
                     ],
