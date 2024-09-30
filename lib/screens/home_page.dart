@@ -82,45 +82,106 @@ class _HomePageState extends State<HomePage> {
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: [
-                  ElevatedButton(
-                    onPressed: () {
-                      // Handle hotels button press
-                    },
-                    child: Text('Hotels'),
-                    style: ElevatedButton.styleFrom(
-
-                    ),
+                  // Hotels button with text outside
+                  Column(
+                    children: [
+                      Container(
+                        width: 110, // Set a width and height to make it more square
+                        height: 80,
+                        child: ElevatedButton(
+                          onPressed: () {
+                            // Handle hotels button press
+                          },
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.yellowAccent.withOpacity(0.5), // Background color for Hotels
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12), // Rounded square shape
+                            ),
+                          ),
+                          child: Icon(
+                            Icons.hotel_sharp, // Building icon for hotels
+                            size: 25,
+                            color: Colors.orange, // Icon color for contrast
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 8),
+                      Text(
+                        'Hotels',
+                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                      ),
+                    ],
                   ),
-                  ElevatedButton(
-                    onPressed: () {
-                      // Handle flights button press
-                    },
-                    child: Text('Flights'),
-                    style: ElevatedButton.styleFrom(
 
-                    ),
+                  // Flights button with text outside
+                  Column(
+                    children: [
+                      Container(
+                        width: 100, // Set a width and height to make it more square
+                        height: 80,
+                        child: ElevatedButton(
+                          onPressed: () {
+                            // Handle flights button press
+                          },
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.redAccent.withOpacity(0.5),
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12), // Rounded square shape
+                            ),
+                          ),
+                          child: Icon(
+                            Icons.flight, // Airplane icon for flights
+                            size: 25,
+                            color: Colors.red, // Icon color for contrast
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 8),
+                      Text(
+                        'Flights',
+                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                      ),
+                    ],
                   ),
-                  ElevatedButton(
-                    onPressed: () {
-                      // Handle all button press
-                    },
-                    child: Text('All'),
-                    style: ElevatedButton.styleFrom(
 
-                    ),
+                  // All button with text outside
+                  Column(
+                    children: [
+                      Container(
+                        width: 100, // Set a width and height to make it more square
+                        height: 80,
+                        child: ElevatedButton(
+                          onPressed: () {
+                            // Handle all button press
+                          },
+                          style: ElevatedButton.styleFrom(
+                            backgroundColor: Colors.greenAccent.withOpacity(0.5), // Background color for All
+                            shape: RoundedRectangleBorder(
+                              borderRadius: BorderRadius.circular(12), // Rounded square shape
+                            ),
+                          ),
+                          child: Icon(
+                            Icons.apartment, // Building with airplane icon for all
+                            size: 25,
+                            color: Colors.green, // Icon color for contrast
+                          ),
+                        ),
+                      ),
+                      SizedBox(height: 8),
+                      Text(
+                        'All',
+                        style: TextStyle(fontSize: 16, fontWeight: FontWeight.bold),
+                      ),
+                    ],
                   ),
                 ],
               ),
-
-              SizedBox(height: 16),
-
-              // Top Destinations section
+              SizedBox(height: 20),
+              // Popular Destinations section
               Text(
-                'Top Destinations',
-                style: TextStyle(fontSize: 20, fontWeight: FontWeight.bold),
+                'Popular Destinations',
+                style: TextStyle(fontSize: 15, fontWeight: FontWeight.bold),
               ),
-              SizedBox(height: 8),
-
               // Displaying the list of destinations from futureDestinations
               DestinationList(futureDestinations: futureDestinations),
             ],
